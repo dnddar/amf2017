@@ -1,0 +1,139 @@
+<!doctype html>
+<html>
+      <head>
+      <meta charset="utf-8">
+      <title>AMF2016</title>
+      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+      <link href="../css/reset.css" rel="stylesheet" type="text/css">
+      <link href="../css/amf.css" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script>
+	  var curday = 0
+         $( document ).ready(function() {
+			 initAgenda()
+			 setDay(0)
+			 
+			 $("a.prevPage").click(function(){
+				$(".cday").css("display","none")	 
+				initAgenda()
+				setDay(curday)
+			 })
+		})
+		function initAgenda(){
+			$("a.prevPage").css("display","none")
+			$(".cday").css("display","none")
+			$(".day1").css("display","none")
+			$(".day2").css("display","none")	
+			
+			$("ul.date li a").each(function(index, element) {
+				$(this).removeClass("on")
+               $(this).click(function(){
+				   	curday =index
+					setDay(index)
+			   }) 
+            });
+			
+		}
+		function setDay(cur){
+			initAgenda()
+			if(cur==0){
+				$(".day1").css("display","block")
+				$(".day2").css("display","none")					
+			}else{
+				$(".day1").css("display","none")
+				$(".day2").css("display","block")	
+			}			
+			var obj = "ul.date li:nth-child("+(cur+1)+") a"
+			$(obj).addClass("on")
+			
+			$("table.speaker td a").click(function(){
+				initAgenda()
+				$("a.prevPage").css("display","block")
+				$("ul.date").css("display","none")
+				$(".cday").css("display","block")
+			})
+			
+		}
+         
+      </script>
+      </head>
+      <body>
+<header> <a href="index.html" class="back"></a> <a href="#" class="prevPage"></a>
+        <h2>講師資訊</h2>
+      </header>
+<div class="main">
+        <ul class="date">
+    <li><a href="#" class="d1 on">2016-09-07</a></li>
+    <li><a href="#" class="d2">2016-09-08</a></li>
+  </ul>
+        <div class="day1">
+    <table class="speaker" width="98%" border="0" cellspacing="2" cellpadding="0">
+            <tr>
+        <td><div class="pic"><img src="../images/pic1.jpg"></div></td>
+        <td><a href="#" data-id="1">葉明水</a></td>
+        <td>&nbsp;</td>
+      </tr>
+            <tr>
+        <td><div class="pic"><img src="../images/pic1.jpg"></div></td>
+        <td><a href="#" data-id="1">葉明水</a></td>
+        <td>&nbsp;</td>
+      </tr>
+          </table>
+  </div>
+        <div class="day2">
+    <table class="speaker" width="100%" border="0" cellspacing="2" cellpadding="0">
+            <tr>
+        <td><div class="pic"><img src="../images/pic1.jpg"></div></td>
+        <td><a href="#" data-id="1">葉明水</a></td>
+        <td>&nbsp;</td>
+      </tr>
+            <tr>
+        <td><div class="pic"><img src="../images/pic1.jpg"></div></td>
+        <td><a href="#" data-id="1">葉明水</a></td>
+        <td>&nbsp;</td>
+      </tr>
+          </table>
+  </div>
+        <div class="cday">
+    <div class="c_spk">
+            <div class="ctop">
+        <div class="cpic"><img src="../images/pic1.jpg"></div>
+        <div class="c_right">
+        	<div class="cname color_blue2">葉明水</div>
+        	<div class="ctitle">主席 / 亞洲展覽會議協會聯盟(AFECA)</div>
+        </div>
+      </div>
+            <div class="ccont">
+        <p>學歷：<br />
+                ●國立政治大學國際貿易研究所碩士<br />
+                ●國立交通大學工學院管理科學系學士</p>
+        <p>主要經歷：<br />
+                ●外貿協會行銷專案處處長<br />
+                ●外貿協會市場開發處副處長<br />
+                ●外貿協會市場開發處海外組組長<br />
+                ●外貿協會鹿特丹台灣貿易中心主任<br />
+                ●外貿協會鹿特丹台灣貿易中心副主任<br />
+                ●外貿協會倫敦台灣貿易中心專員<br />
+                ●外貿協會展覽業務處專員</p>
+        <p>受訓記錄：<br />
+                曾參加許多展覽、行銷與領導學等相關課程訓練，包括由瑞士洛桑管理學院(IMD)所規劃之企業營運總部「跨國經營策略班」(Branding Taiwan)、美國展覽暨活動協會(IAEE)所辦理之國際展覽認證課程(Certified in Exhibition Management )以及Harvard Business School所辦理的「Changing the Game: Negotiation &amp; Competitive Decision Making」。</p>
+        <p>專業經歷：<br />
+                ●中華民國展覽暨會議商業同業公會理事長<br />
+                ●國際展覽業組織UFI董事<br />
+                ●國際展覽業組織UFI行銷委會員委員<br />
+                ●亞洲展覽會議協會聯盟AFECA顧問<br />
+                ●國際會展協會IAEE專業認證課程CEM在台委員會 主任委員<br />
+                ●台北市會展產業發展基金會董事<br />
+                ●2010年台北花博外貿協會專案小組召集人 (2010/11~2011/04)<br />
+                ●2010年上海世博會台灣館總館長 (2010/04~2010/10)</p>
+      </div>
+          </div>
+  </div>
+      </div>
+</div>
+<footer> </footer>
+</body>
+</html>

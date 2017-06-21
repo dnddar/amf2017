@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+      <head>
+      <meta charset="utf-8">
+      <title>AMF2016</title>
+      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+      <link href="../css/reset.css" rel="stylesheet" type="text/css">
+      <link href="../css/amf.css" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script>
+	  var curday = 0
+         $( document ).ready(function() {
+					 
+			 $("a.prevPage").click(function(){				 
+				initMan()
+			 })
+			 initMan()
+		})
+		function initMan(){
+			$("a.prevPage").css("display","none")
+			$(".cday").css("display","none")	
+			$(".day1").css("display","block")
+			$("table.speaker td a").click(function(){				
+				$("a.prevPage").css("display","block")
+				$(".day1").css("display","none")
+				$(".cday").css("display","block")
+				var id = $(this).attr("data-id")
+				setMan(id)
+			})
+			
+		}
+		function setMan(cur){
+			console.log("cur:"+cur)			
+			
+		}
+         
+      </script>
+      </head>
+      <body>
+<header> <a href="index.html" class="back"></a> <a href="#" class="prevPage"></a>
+        <h2>電子名片</h2>
+      </header>
+<div class="main">
+        <div class="day1">
+    <table class="speaker man" width="98%" border="0" cellspacing="2" cellpadding="0">
+            <tr>
+        <td><a href="#" data-id="1">葉明水</a></td>
+        <td>&nbsp;</td>
+      </tr>
+            <tr>
+        <td><a href="#" data-id="1">葉明水</a></td>
+        <td>&nbsp;</td>
+      </tr>
+          </table>
+  </div>
+        <div class="cday">
+    <h3 class="tit">姓名</h3>
+    <div class="content">姓名姓名</div>
+    <h3 class="tit">職稱</h3>
+    <div class="content">老闆老闆老闆</div>
+    <h3 class="tit">詳細介紹</h3>
+    <div class="c_spk">
+            <div class="ccont man">內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容內容</div>
+          </div>
+  </div>
+      </div>
+<footer> </footer>
+</body>
+</html>

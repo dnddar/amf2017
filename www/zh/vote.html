@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+      <head>
+      <meta charset="utf-8">
+      <title>AMF2016</title>
+      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+      <link href="../css/reset.css" rel="stylesheet" type="text/css">
+      <link href="../css/amf.css" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script>
+	  var curqus = 0
+	  var qus_ary=[["題目1題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目","選項1選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項","選項2選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項","選項3選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項","選項4選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項"],["題目2題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目","選項1選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項","選項2選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項","選項3選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項","選項4選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項"],["題目3題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目題目","選項1選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項","選項2選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項","選項3選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項","選項4選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項"]]
+         $( document ).ready(function() {
+			 $("ul.qus_a li a").each(function(index, element) {
+               $(this).click(function(){
+				   sendAns(index)
+			   }) 
+            });
+			setQus(curqus)
+		})
+		
+		function setQus(cur){
+			var ary = qus_ary[cur]
+			$(".qus_q table th").html("Q"+(cur+1))
+			$(".qus_q table td").html(ary[0])
+			
+			var str_ans = ""
+			for(var i = 1;i<ary.length;i++){
+			 str_ans+="<li><a href=\"#\">"+ary[i]+"</a></li>"	
+			}
+			$("ul.qus_a").html(str_ans)
+			$("ul.qus_a li a").each(function(index, element) {
+               $(this).click(function(){
+				   sendAns(index)
+			   }) 
+            });
+		}
+		function sendAns(index){
+			console.log("ans:"+index)
+			nextQus()
+		}
+		function nextQus(){
+			if(curqus<qus_ary.length-1){
+				curqus++
+				setQus(curqus);	
+			}else{
+				$(".qus").html("<p style=\"text-align:center; padding-top:30px;\">投票完成</p>")	
+			}	
+		}
+         
+      </script>
+      </head>
+      <body>
+<header> <a href="index.html" class="back"></a>
+        <h2>會議投票</h2>
+      </header>
+<div class="main">
+        <div class="qus">
+    <div class="qus_q">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+                <th scope="col" class="color_blue2">Q1</th>
+                <td scope="col"></td>
+              </tr>
+      </table>
+          </div>
+    <ul class="qus_a">
+            <li><a href="#">選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項</a></li>
+            <li><a href="#">選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項</a></li>
+            <li><a href="#">選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項</a></li>
+            <li><a href="#">選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項選項</a></li>
+          </ul>
+  </div>
+      </div>
+<footer> </footer>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+      <head>
+      <meta charset="utf-8">
+      <title>AMF2016</title>
+      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+      <link href="../css/reset.css" rel="stylesheet" type="text/css">
+      <link href="../css/amf.css" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script>
+	  var curday = 0
+         $( document ).ready(function() {
+			 initAgenda()
+			 setDay(0)
+			 
+			 $("a.prevPage").click(function(){
+				$(".cday").css("display","none")	 
+				initAgenda()
+				setDay(curday)
+			 })
+		})
+		function initAgenda(){
+			$("a.prevPage").css("display","none")
+			$(".cday").css("display","none")
+			$(".day1").css("display","none")
+			$(".day2").css("display","none")	
+			
+			$("ul.date li a").each(function(index, element) {
+				$(this).removeClass("on")
+               $(this).click(function(){
+				   	curday =index
+					setDay(index)
+			   }) 
+            });
+			
+		}
+		function setDay(cur){
+			initAgenda()
+			if(cur==0){
+				$(".day1").css("display","block")
+				$(".day2").css("display","none")					
+			}else{
+				$(".day1").css("display","none")
+				$(".day2").css("display","block")	
+			}			
+			var obj = "ul.date li:nth-child("+(cur+1)+") a"
+			$(obj).addClass("on")
+			
+			$("table.agenda td a").click(function(){
+				initAgenda()
+				$("a.prevPage").css("display","block")
+				$("ul.date").css("display","none")
+				$(".cday").css("display","block")
+			})
+			
+		}
+         
+      </script>
+      </head>
+      <body>
+<header> <a href="index.html" class="back"></a> <a href="#" class="prevPage"></a>
+        <h2>議程簡介</h2>
+      </header>
+<div class="main">
+        <ul class="date">
+    <li><a href="#" class="d1 on">2016-09-07</a></li>
+    <li><a href="#" class="d2">2016-09-08</a></li>
+  </ul>
+        <div class="day1">
+    <table class="agenda" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+        <th scope="col">時間</th>
+        <th scope="col">議程</th>
+        <th scope="col">&nbsp;</th>
+      </tr>
+            <tr>
+        <td>13:00 - 13:30</td>
+        <td><a href="#" data-id="1"><span>來賓報到</span></a></td>
+        <td>&nbsp;</td>
+      </tr>
+            <tr>
+        <td>13:30 - 13:50</td>
+        <td><span>開幕致詞</span></td>
+        <td>&nbsp;</td>
+      </tr>
+            <tr>
+        <td>13:50 - 15:30</td>
+        <td><span>CEO對談：</span>2025會展新面貌 </td>
+        <td>&nbsp;</td>
+      </tr>
+            <tr>
+        <td>15:30 - 15:50</td>
+        <td><span>中場休息</span></td>
+        <td>&nbsp;</td>
+      </tr>
+            <tr>
+        <td>15:50 - 16:30</td>
+        <td><span>專題演講１：</span>對岸的草坪是否更綠？談兩岸營銷的最新機遇與挑戰 </td>
+        <td>&nbsp;</td>
+      </tr>
+            <tr>
+        <td>16:30 - 18:00</td>
+        <td><span>分組座談１：</span>遊戲FUN城市 </td>
+        <td>&nbsp;</td>
+      </tr>
+          </table>
+  </div>
+        <div class="day2">
+    <table class="agenda" width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+        <th scope="col">時間</th>
+        <th scope="col">議程</th>
+        <th scope="col">&nbsp;</th>
+      </tr>
+            <tr>
+        <td>09:00 - 09:40</td>
+        <td><span>專題演講2：</span>互動行銷－海尼根體驗館</td>
+        <td>&nbsp;</td>
+      </tr>
+          </table>
+  </div>
+        <div class="cday">
+    <h3>議程</h3>
+    <div class="content t1">CEO對談：2025會展新面貌</div>
+    <h3>時間</h3>
+    <div class="content t2">13:50 - 15:30 </div>
+    <h3>主持人</h3>
+    <div class="content t3">葉明水 / 主席 / 亞洲展覽會議協會聯盟</div>
+    <h3>與談人</h3>
+    <div class="content t4">1. Mr. Kai Hattendorf / 總經理 / 國際展覽業協會(UFI)<br>
+
+2. Mr. Gregg H. Talley / 北美區副主席 / 國際會議協會(ICCA)<br>
+
+3. Mr. Adam Charles / 亞太區副總裁 / Freeman XP<br>
+
+4. Mr. Greg Bogue / 體驗設計部副總裁 / Maritz Travel Co.</div>
+  </div>
+      </div>
+<footer> </footer>
+</body>
+</html>

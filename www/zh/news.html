@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+      <head>
+      <meta charset="utf-8">
+      <title>AMF2016</title>
+      <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+      <link href="../css/reset.css" rel="stylesheet" type="text/css">
+      <link href="../css/amf.css" rel="stylesheet" type="text/css">
+      <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+      <script src="../js/funcs.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+      <script>
+	  var url_json = "http://www.amf.com.tw/api/";
+	  var curday = 0
+         $( document ).ready(function() {
+					 
+			 $("a.prevPage").click(function(){				 
+				initMan()
+			 })
+			 getNews()
+			 
+		})
+		function getNews(){
+			/*$.ajax({
+                url: url_json + "getnews.php?lang=1",
+                dataType: "jsonp",
+                jsonp: 'callback',
+                jsonpCallback: 'initMan',
+                success: function(data) {
+                    //alert('success');
+					console.log("data:"+data)
+                }
+            });*/
+			$.getJSON( url_json + "getnews.php?jsoncallback=?", function(data) {
+	
+	var html = '<ul>';
+	for(var i = 0; i < data.length; i++)
+	{
+		html += '<li>' + data[i] + '</li>';
+	}
+	html += '</ul>';
+	
+	$('#cday').html(html); 
+});
+		}
+		function initMan(data){
+			console.log("initMan data:"+data)
+			$("a.prevPage").css("display","none")
+			$(".cday").css("display","none")	
+			$(".day1").css("display","block")
+			$("ul.news li a").click(function(){				
+				$("a.prevPage").css("display","block")
+				$(".day1").css("display","none")
+				$(".cday").css("display","block")
+				var id = $(this).attr("data-id")
+				setNews(id)
+			})
+			
+		}
+		function setNews(cur){
+			console.log("cur:"+cur)	;
+			$(".npic").css("background-image","url(../images/pic2.jpg)")		
+			
+		}
+         
+      </script>
+      </head>
+      <body>
+<header> <a href="index.html" class="back"></a> <a href="#" class="prevPage"></a>
+        <h2>新聞中心</h2>
+      </header>
+<div class="main">
+        <div class="day1">
+    <ul class="news">
+            <li><a href="#" data-id="1">新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞</a></li>
+            <li><a href="#" data-id="2">新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞</a></li>
+            <li><a href="#" data-id="3">新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞新聞</a></li>
+          </ul>
+  </div>
+        <div class="cday">
+    <div class="c_spk">
+    		<div class="npic"></div>
+            <div class="ntitle">標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題標題</div>
+            <div class="ccont news"><p>亞洲會展界首屈一指的年度盛事－2016年「亞洲會展產業論壇」即將於9月7日至8日在台北國際會議中心隆重登場!本次論壇以「體驗！分享！新世紀」為主題，特別邀請來自荷蘭「海尼根體驗館」以及北海道最具代表性的「札幌雪祭」代表來台，分享成功行銷的獨特秘訣，揭開創意背後的神秘面紗。</p>
+
+<p><strong>揭開</strong><strong>2025</strong><strong>會展新面貌</strong></p>
+
+<p>由經濟部國際貿易局委託，外貿協會執行的「亞洲會展產業論壇」今年已邁入第11屆，本屆特別邀請國際展覽業協會(UFI)總經理Kai Hattendorf、國際會議協會(ICCA)北美區副主席Gregg H. Talley以及獲選全球會展業25大影響人物－Maritz Travel Company 體驗設計部副總裁Greg Bogue齊聚一堂，針對2025年會展新面貌進行對談，共同激盪出宏觀的創意火花。另外也邀請到2016 UFI最佳科技獎、2015年國際獎勵旅遊協會(SITE) Crystal Award與ICCA最佳公關獎得主來臺，除帶來會展大數據的行銷運用秘訣外，亦分享成功行銷的致勝關鍵，將帶給國內會展界深刻啟發。</p>
+
+<p><strong>兩岸公關創意高手</strong><strong>PK</strong><strong>對話</strong></p>
+
+<p>值得一提的是，為開拓與會者視野，曾獲得美國<em>富比士</em>雜誌選為「亞洲50位最具影響力女性」的奧美集團大中華地區副董事長莊淑芬亦將特別應邀主講，剖析<strong>兩岸營銷的最新機遇與挑戰</strong>，啟發國內會展活動業新思維。此外，兩岸會展領袖對談中，也特別邀請到全球著名公關集團的萬博宣偉國際公關公司中國區主席劉希平、藍色游標數字行銷機構總裁兼首席營運長矯龍與臺灣摩奇創意及世紀智庫公司代表暢談「兩岸創意行銷夯話題」，並探討兩岸會展交流商機，相信可激盪業界行銷新創意。</p>
+
+<p>2016年「亞洲會展產業論壇」網羅國際會展權威組織及全球重要展覽公司代表來臺分享精闢見解，內容精彩可期，除了能引領會展新潮流外，更可為與會者帶來更多元化的國際交流與商機。8月12日前報名可享早鳥優惠價，歡迎有意參加者把握機會前往活動網站報名(<a href="http://www.amf.com.tw">www.amf.com.tw</a>)。</p>
+</div>
+          </div>
+  </div>
+      </div>
+<footer> </footer>
+</body>
+</html>
