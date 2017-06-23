@@ -71,6 +71,7 @@
 		$t12="Government<br>Promote Unit";
 		$t13="International<br>Press";
 		$t14="Partner";
+		$t15="精彩剪輯";
 
 		$t1_1 = "The New Era of Experiencing and Sharing";
 		$t1_2 = "FOCUS";
@@ -125,6 +126,7 @@
 		$t12="政府會展推廣單位";
 		$t13="國際媒體";
 		$t14="合作夥伴";
+		$t15="精彩剪輯";
 
 		$t1_1 = "創新會展．翻轉城市";
 		$t1_2 = "本屆焦點";
@@ -808,40 +810,46 @@
           </div>
   </div>
       </section>
-<section class="content review" id="review">
-        <div class="wrap photo">
-        <h2 class="t8">
-    <?=$t8?>
-  </h2>
-        <div class="review_main clearfix">
-    <div class="review_block"><a href="http://2016.amf.com.tw" target="_blank">
-      <div class="review_cover1">
-        <div class="review_coverWORD">VIEW<br>
-          2015<br>
-          WEBSITE</div>
-      </div>
-      <div class="review_pic1"><img src="images/review_1_1.jpg"></div>
-      <div class="review_color1">
-        <p class="amf">AMF</p>
-        <p class="year">2015</p>
-      </div>
-      <div class="review_pic2"><img src="images/review_1_2.jpg"></div>
-      </a> </div>
-    <div class="review_block"><a href="http://2015.amf.com.tw" target="_blank">
-      <div class="review_cover1 sec">
-        <div class="review_coverWORD">VIEW<br>
-          2014<br>
-          WEBSITE</div>
-      </div>
-      <div class="review_pic1"><img src="images/review_2_1.jpg"></div>
-      <div class="review_color1 sec">
-        <p class="amf">AMF</p>
-        <p class="year">2014</p>
-      </div>
-      <div class="review_pic2"><img src="images/review_2_2.jpg"></div>
-      </a> </div></div>
-  </div>
-      </section>
+			<section class="content review" id="review">
+				<div class="wrap photo">
+					<h2 class="t8">
+				<?=$t8?>  </h2>
+					<div class="review_main clearfix">
+						<div class="review_block">
+							<div class="videoframe">
+								<iframe width="580" height="326" src="https://www.youtube-nocookie.com/embed/_BWgExBupyM?rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="review_bot clearfix">
+								<div class="bot_left">
+									<span>2016 AMF</span><br>
+									<span class="botsub">WEBSITE</span>
+								</div>
+								<div class="bot_download">
+									<a href="pdf/amf2016.pdf" target="_blank">
+									<?=$t15?>
+								</a>
+								</div>
+							</div>
+						</div>
+						<div class="review_block clearfix">
+							<div class="videoframe">
+								<iframe width="580" height="326" src="https://www.youtube-nocookie.com/embed/_BWgExBupyM?rel=0" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="review_bot  v2015 clearfix">
+								<div class="bot_left">
+									<span>2016 AMF</span><br>
+									<span class="botsub">WEBSITE</span>
+								</div>
+								<div class="bot_download">
+									<a href="pdf/amf201.pdf" target="_blank">
+									<?=$t15?>
+								</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 			<section class="content photo" id="photo">
 			        <div class="wrap photo clearfix">
 			    <h2 class="t7">
@@ -946,8 +954,7 @@
             <?=$t13?>
           </h2>
                 <ul class="sublink p4">
-            <li><a href="http://www.ttgmice.com/" target="_blank"><img src="images/link09_ttg.png" ></a></li>
-            <li><a href="http://www.ttgassociations.com/" target="_blank"><img src="images/link10_ttga.png" ></a></li>
+            <li><a href="http://www.meetings-conventions-asia.com/" target="_blank"><img src="" ></a></li>
           </ul>
               </li>
               <li>

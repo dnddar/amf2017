@@ -208,6 +208,7 @@ ul.photolist li.f2{ position:absolute; right:0; bottom:0}
 
 .review_main {margin:0 auto; padding-top:40px;}
 .review_main .review_block { width:620px; float:left; margin:0px 5px 0px 5px; position:relative;}
+.review_main .review_block .videoframe{ width:580px; margin: 0 auto; position:relative;}
 .review_main .review_block .review_cover1 { position:absolute; background:rgba(232,82,141,0.5); width:100%; height:617px; display:none; z-index:1;}
 .review_main .review_block .review_cover1.sec{background:rgba(141,194,31,0.5); }
 .review_main .review_block:hover .review_cover1 { display:block; }
@@ -219,6 +220,34 @@ ul.photolist li.f2{ position:absolute; right:0; bottom:0}
 .review_main .review_block .review_coverWORD { color:#FFF; font-family:'Josefin Sans'; font-size:22px; text-align:right; margin:10px 10px 0px 0px;}
 .review_main .review_block .review_pic2 { margin:0px 0px 5px 0px; float:left}
 .review_main .review_block .review_pic2 img{ width:100%; height:auto}
+.review_main .review_block .review_bot{ background: #fff; width:570px; margin: 15px auto 0; border: 5px solid #00a0ea; -webkit-border-radius: 15px 15px 15px 15px ;
+-moz-border-radius: 15px 15px 15px 15px;
+border-radius:15px 15px 15px 15px;}
+.review_main .review_block .review_bot .bot_left{float:left; width: 60%; background: #00a0ea; padding: 18px 0px; text-align: center;-webkit-border-radius: 0 15px 15px 0 ;
+-moz-border-radius: 0 15px 15px 0;
+border-radius:0 15px 15px 0;}
+.review_main .review_block .review_bot .bot_left span{color:#fff; font-weight: bolder; font-size: 1.5em;}
+.review_main .review_block .review_bot .bot_left span.botsub{font-size: 1.7em;}
+.review_main .review_block .review_bot .bot_download{ float: right;
+    vertical-align: middle;
+    width: 40%;
+    text-align: center;}
+.review_main .review_block .review_bot .bot_download a{ background: url(../images/icon_download_01.jpg) no-repeat 10% 40%;
+    background-size: auto 70%;
+    padding-left: 0;
+    vertical-align: top;
+    font-size: 1.5em;
+    line-height: 3.5em;
+    width: 100%;
+    text-decoration: none;
+    color: #00a0ea;
+    font-weight: bolder;
+    display: block;
+    margin-left: 15px;
+  }
+.review_main .review_block .review_bot.v2015{border: 5px solid #e8538d;}
+.review_main .review_block .review_bot.v2015 .bot_left{background: #e8538d;}
+.review_main .review_block .review_bot.v2015 .bot_download a{background: url(../images/icon_download_02.jpg) no-repeat 10% 40%; color: #e8538d;}
 
 .review_main .review_block  p{ color:#FFF; text-align : center; font-family:Century Gothic; }
 .review_main .review_block  p.amf { font-size:60px; margin:35px 0px 0px 0px; }
