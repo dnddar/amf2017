@@ -553,20 +553,14 @@
   </div>
       </header>
 <div class="banner" id="top">
-        <!--<div class="bannermask"></div>-->
-        <!--<div class="banner_word">
-    <h2>
-            <?=$hh?>
-          </h2>
-    <div class="date"><span class="first">2017</span> <span>09</span><span>07</span> <span class="dash">08</span></div>
-    <div class="day"><span class="word">
-      <?=$countdown?>
-      </span><span class="number" id="countdownday"> </span><span class="word">
-      <?=$day?>
-      </span></div>
-    <a class="join" href="#apply">
-          <?=$t4?>
-          </a> </div>-->
+        <div class="bannermask"></div>
+				<div class="banner_word">
+		      <div class="toptitle"><img src="images/banner_text.png" alt=""></div>
+		      <!--<div class="date"><span class="first">2017</span> <span>09</span><span>07</span> <span class="dash">08</span></div>-->
+		      <div class="day"><span class="word">
+		            </span><span class="number" id="countdownday"> </span><span class="word">
+		            </span></div>
+		      <a class="join" href="#apply">活動報名</a> </div>
         <div class="banner_bar">
     <ul class="clearfix">
             <li class="b1"><span>LOCATION</span>台北國際會議中心101會議室</li>
