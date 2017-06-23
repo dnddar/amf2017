@@ -837,11 +837,11 @@
 							</div>
 							<div class="review_bot  v2015 clearfix">
 								<div class="bot_left">
-									<span>2016 AMF</span><br>
+									<span>2015 AMF</span><br>
 									<span class="botsub">WEBSITE</span>
 								</div>
 								<div class="bot_download">
-									<a href="pdf/amf201.pdf" target="_blank">
+									<a href="pdf/amf2015.pdf" target="_blank">
 									<?=$t15?>
 								</a>
 								</div>
