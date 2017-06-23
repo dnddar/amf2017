@@ -527,11 +527,11 @@
         <li><a href="#apply" class="go">
           <?=$t4?>
           </a></li>
-        <li class="secd"> <a href="#news" class="go">
+        <li> <a href="#news" class="go">
           <?=$t5?>
           </a>
               </li>
-							<li>
+							<li class="secd">
 								<a href="#news" class="go">
 				          <?=$t8?>
 				          </a>
