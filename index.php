@@ -954,7 +954,7 @@
             <?=$t13?>
           </h2>
                 <ul class="sublink p4">
-            <li><a href="http://www.meetings-conventions-asia.com/" target="_blank"><img src="" ></a></li>
+            <li><a href="http://www.meetings-conventions-asia.com/" target="_blank"><img src="images/link13_mcasia.png" ></a></li>
           </ul>
               </li>
               <li>
