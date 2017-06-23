@@ -808,49 +808,6 @@
           </div>
   </div>
       </section>
-<section class="content photo" id="photo">
-        <div class="wrap photo clearfix">
-    <h2 class="t7">
-            <?=$t7?>
-          </h2>
-    <ul class="photolist">
-            <li> <a href="<?=$album_ary[0]?>" rel="prettyPhoto[gallery1]">
-              <div class="cover1"></div>
-              </a></li>
-            <li> <a href="<?=$album_ary[1]?>" rel="prettyPhoto[gallery1]">
-              <div class="cover1"></div>
-             </a></li>
-            <li> <a href="<?=$album_ary[2]?>" rel="prettyPhoto[gallery1]">
-              <div class="cover1"></div>
-              </a></li>
-          </ul>
-    <ul class="photolist">
-            <li> <a href="<?=$album_ary[3]?>" rel="prettyPhoto[gallery1]">
-              <div class="cover1"></div>
-              </a></li>
-            <li class="size2"> <a href="<?=$album_ary[4]?>" rel="prettyPhoto[gallery1]">
-              <div class="cover1"></div>
-              </a></li>
-          </ul>
-    <ul class="photolist top clearfix">
-            <li class="size3"> <a href="<?=$album_ary[5]?>" rel="prettyPhoto[gallery1]">
-              <div class="cover1"></div>
-              </a></li>
-            <li class="f1 size4"> <a href="<?=$album_ary[6]?>" rel="prettyPhoto[gallery1]">
-              <div class="cover1"></div>
-              </a></li>
-            <li class="f1 size5"> <a href="<?=$album_ary[7]?>" rel="prettyPhoto[gallery1]">
-              <div class="cover1"></div>
-              </a></li>
-            <li class="f2 size5"> <a href="<?=$album_ary[8]?>" rel="prettyPhoto[gallery1]">
-              <div class="cover1"></div>
-              </a></li>
-          </ul>
-  </div>
-  <div class="domore">
-  <a data-cur="photo" data-status="close"></a>
-  </div>
-      </section>
 <section class="content review" id="review">
         <div class="wrap photo">
         <h2 class="t8">
@@ -885,6 +842,49 @@
       </a> </div></div>
   </div>
       </section>
+			<section class="content photo" id="photo">
+			        <div class="wrap photo clearfix">
+			    <h2 class="t7">
+			            <?=$t7?>
+			          </h2>
+			    <ul class="photolist">
+			            <li> <a href="<?=$album_ary[0]?>" rel="prettyPhoto[gallery1]">
+			              <div class="cover1"></div>
+			              </a></li>
+			            <li> <a href="<?=$album_ary[1]?>" rel="prettyPhoto[gallery1]">
+			              <div class="cover1"></div>
+			             </a></li>
+			            <li> <a href="<?=$album_ary[2]?>" rel="prettyPhoto[gallery1]">
+			              <div class="cover1"></div>
+			              </a></li>
+			          </ul>
+			    <ul class="photolist">
+			            <li> <a href="<?=$album_ary[3]?>" rel="prettyPhoto[gallery1]">
+			              <div class="cover1"></div>
+			              </a></li>
+			            <li class="size2"> <a href="<?=$album_ary[4]?>" rel="prettyPhoto[gallery1]">
+			              <div class="cover1"></div>
+			              </a></li>
+			          </ul>
+			    <ul class="photolist top clearfix">
+			            <li class="size3"> <a href="<?=$album_ary[5]?>" rel="prettyPhoto[gallery1]">
+			              <div class="cover1"></div>
+			              </a></li>
+			            <li class="f1 size4"> <a href="<?=$album_ary[6]?>" rel="prettyPhoto[gallery1]">
+			              <div class="cover1"></div>
+			              </a></li>
+			            <li class="f1 size5"> <a href="<?=$album_ary[7]?>" rel="prettyPhoto[gallery1]">
+			              <div class="cover1"></div>
+			              </a></li>
+			            <li class="f2 size5"> <a href="<?=$album_ary[8]?>" rel="prettyPhoto[gallery1]">
+			              <div class="cover1"></div>
+			              </a></li>
+			          </ul>
+			  </div>
+			  <div class="domore">
+			  <a data-cur="photo" data-status="close"></a>
+			  </div>
+			      </section>
 <!--<section class="content csr" id="csr">
         <h2 class="t9">
     <?=$t6?>
