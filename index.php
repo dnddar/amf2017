@@ -532,7 +532,7 @@
           </a>
               </li>
 							<li class="secd">
-								<a href="#news" class="go">
+								<a href="#review" class="go">
 				          <?=$t8?>
 				          </a>
 								<ul class="submenu">
@@ -541,7 +541,7 @@
               </a></li>
           </ul>
 							</li>
-							<li><a href="#news" class="go">
+							<li><a href="#link" class="go">
 			          <?=$t9?>
 			          </a></li>
         <li class="fb"><a href="https://www.facebook.com/asianmiceforum?fref=ts" target="_blank"><img src="images/facebook.png"></a></li>
