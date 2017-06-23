@@ -555,9 +555,7 @@
 <div class="banner" id="top">
         <div class="bannermask"></div>
         <div class="banner_word">
-    <h2>
-            <?=$hh?>
-          </h2>
+    	<div class="toptitle"><img src="images/banner_text.png" alt=""></div>
     <!--<div class="date"><span class="first">2017</span> <span>09</span><span>07</span> <span class="dash">08</span></div>-->
     <div class="day"><span class="word">
       <?=$countdown?>
