@@ -530,15 +530,20 @@
         <li class="secd"> <a href="#news" class="go">
           <?=$t5?>
           </a>
-                <ul class="submenu">
+              </li>
+							<li>
+								<a href="#news" class="go">
+				          <?=$t8?>
+				          </a>
+								<ul class="submenu">
             <li class="sub2"><a href="#photo" class="go">
               <?=$t7?>
               </a></li>
-            <li class="sub2"><a href="#review" class="go">
-              <?=$t8?>
-              </a></li>
           </ul>
-              </li>
+							</li>
+							<li><a href="#news" class="go">
+			          <?=$t9?>
+			          </a></li>
         <li class="fb"><a href="https://www.facebook.com/asianmiceforum?fref=ts" target="_blank"><img src="images/facebook.png"></a></li>
         <li class="lang"><span class="nowlang">
           <?=$langName?>
@@ -880,7 +885,7 @@
       </a> </div></div>
   </div>
       </section>
-<section class="content csr" id="csr">
+<!--<section class="content csr" id="csr">
         <h2 class="t9">
     <?=$t6?>
   </h2>
@@ -896,7 +901,7 @@
           </div>
     <div class="pages clearfix"><a class="on"></a><a></a><a></a></div>
   </div>
-      </section>
+</section>-->
 <section class="content link" id="link">
         <div class="link_top">
     <h2 class="t10">
