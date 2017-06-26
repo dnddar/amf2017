@@ -2,12 +2,12 @@
 function openDB(){
     global $conn;
     $servername = "localhost";
-	
-	
+
+
 	$username = "root";
 	$password = "digiorangeFor#AMF";
-	$dbname = "amf2016";
-	
+	$dbname = "amf2017";
+
 	// var_dump($servername);
 
 	// Create connection
@@ -17,8 +17,8 @@ function openDB(){
 		die("Connection failed: " . $conn->connect_error);
 	}
     // var_dump($conn->connect_error);
-    mysqli_query($conn, "SET NAMES 'utf8'"); 
-    mysqli_query($conn, "SET CHARACTER_SET_CLIENT=utf8"); 
+    mysqli_query($conn, "SET NAMES 'utf8'");
+    mysqli_query($conn, "SET CHARACTER_SET_CLIENT=utf8");
     mysqli_query($conn, "SET CHARACTER_SET_RESULTS=utf8");
 }
 
@@ -28,4 +28,4 @@ function closeDB(){
     return mysqli_close($conn);
 }
 
-?> 
+?>
