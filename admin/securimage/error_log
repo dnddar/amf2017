@@ -1,0 +1,6 @@
+[20-Apr-2015 00:29:11 Asia/Taipei] PHP Warning:  imagecreate(): Invalid image dimensions in /home/kcfmilkc/public_html/securimage/securimage.php on line 506
+[20-Apr-2015 00:29:11 Asia/Taipei] PHP Warning:  imagepalettecopy() expects parameter 1 to be resource, boolean given in /home/kcfmilkc/public_html/securimage/securimage.php on line 509
+[20-Apr-2015 00:29:11 Asia/Taipei] PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /home/kcfmilkc/public_html/securimage/securimage.php on line 598
+[20-Apr-2015 00:29:11 Asia/Taipei] PHP Warning:  imagettftext() expects parameter 1 to be resource, boolean given in /home/kcfmilkc/public_html/securimage/securimage.php on line 720
+[20-Apr-2015 00:29:11 Asia/Taipei] PHP Warning:  imagecolorat() expects parameter 1 to be resource, boolean given in /home/kcfmilkc/public_html/securimage/securimage.php on line 754
+[20-Apr-2015 00:29:11 Asia/Taipei] PHP Warning:  imagepalettecopy() expects parameter 2 to be resource, boolean given in /home/kcfmilkc/public_html/securimage/securimage.php on line 757

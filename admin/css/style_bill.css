@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0; padding:0}
+html, body{ height: 100%; font-family:font-family: Arial, "文泉驛正黑", "WenQuanYi Zen Hei", "儷黑 Pro", "LiHei Pro", "微軟正黑體", "Microsoft JhengHei", sans-serif; color:#000; font-size:16px; background:#ffffff;}
+body{ width:100%; }
+
+.note{ font-size:12px; color:#999; text-align:right; padding:5px;}
+.wrap{ width:960px; margin:0 auto; position:relative;}
+.content{ padding:25px;}
+.logo{ width:91px; margin:0 auto;}
+.logo img{ width:150px;}
+.userdata{ padding:15px 15px 40px 0;}
+.userdata table{ border-collapse:collapse;}
+.userdata table th{ text-align:right; width:60px; vertical-align:middle; padding-right:5px; white-space:nowrap}
+.userdata table td{ border-bottom:1px dotted #000; vertical-align:middl; height:30px; padding-left:5px;}
+.userdata table td.nobo{ border:none}
+
+.billcontent{ width:800px; margin:0 auto}
+.billcontent h2{ font-size:18px; padding:5px 15px; background:url(../images/arrowgray.jpg) no-repeat left center}
+.billcontent table{ border-collapse:collapse; margin-bottom:20px; border:2px solid #ccc}
+.billcontent table th{ border:1px solid #ccc; padding:5px 10px; text-align:left}
+.billcontent table th[scope=col]{ background:#eee;}
+.billcontent table td{ border:1px solid #ccc; padding:5px 10px; text-align:right}
+.billcontent table td.txr{ text-align:right}
+
+.results_table{ width:900px; margin:0 auto}
+.results_table h1{font-size:20px; padding:5px 15px; text-align:center}
+.results_table h2{ font-size:20px; padding:5px 15px;}
+.results_table h2 span{ text-align:right; display:inline-block; font-size:16px; padding:5px 15px;}
+.results_table table{ border-collapse:collapse; margin-bottom:20px; border:2px solid #ccc}
+.results_table table th{ border:2px solid #ccc; border-left:1px solid #ccc; border-right:1px solid #ccc; padding:5px 10px; text-align:center; background:#eee}
+.results_table table td{ border:1px solid #ccc; padding:5px 5px; text-align:center}
+.results_table table th.txr{ text-align:right}
+.results_table table td.txr{ text-align:right}
+
+.totalcount{ float:right; min-height:250px;}
+
+.r_date{ width:80px;}
+.r_num{ width:80px;}
+.r_name{ width:85px;}
+.r_money{ width:90px;}
+.r_salse{ width:80px;}
+
+
+#printableArea{border:1px solid #ccc; }
+#print{ text-align:center; width:100px; margin:20px auto 60px;}
+#print input{ width:80px;}
+
+
+
+
+
+
+
+/*clearfix*/
+.clear{clear:both;}
+.clearfix{display:block;} 
+.clearfix:after{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+/* Hides from IE-mac \*/
+* html .clearfix{height:1%;}
