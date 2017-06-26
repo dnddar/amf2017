@@ -97,7 +97,7 @@ border: 2px solid #fff; padding:10px; text-align:center; margin:20px auto 0; mar
 
 .content.intro{}
 .content.schedule{ background:#e5e5e5}
-.content.apply{ padding:70px 0; background:url(../images/black_5.png) no-repeat  -300px 50%, url(../images/pic_5.jpg) no-repeat; background-size:cover}
+.content.apply{ padding:70px 0; background:url(../images/black_5.png) no-repeat  -300px 100%, url(../images/pic_5.jpg) no-repeat; background-size:cover}
 .content.photo{ background:#E5E5E5}
 .content.csr{ background:url(../images/pic_9.jpg) no-repeat center top; min-height:300px; padding-bottom:0; background-size:cover; padding-top:50px;}
 .content.link{ position:relative; background:#ad6ed1; padding-top:30px;}
